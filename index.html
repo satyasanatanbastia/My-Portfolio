@@ -11,7 +11,7 @@
 
 <body>
   <div id="wrapper">
-    <div class="container">
+    <div class="container navbar-container">
       <div class="navbar">
         <div class="Logo-continer">
           <img src="./images/userAsset/NavLogo.jpg" class="logo">
@@ -22,7 +22,7 @@
           <div class="nav-items">
             <div><a href="#projects">Projects</a></div>
             <div><a href="#skills">Skills</a></div>
-            <div><a href="#contactme">contact Me</a></div>
+            <div><a href="#contactme">Contact Me</a></div>
           </div>
         </nav>
       </div>
@@ -343,6 +343,15 @@
       backSpeed: 80,
       backDelay: 1000,
     });
+
+  const hum_burger_btn = document.getElementById("hum-burger-btn");
+  const nav = document.getElementsByTagName("nav");
+  console.log(hum_burger_btn);
+  console.log(nav[0]);
+  hum_burger_btn.addEventListener("click",() => {
+    nav[0].classList.toggle('active');
+    hum_burger_btn.classList.toggle('active');
+  });
   </script>
 </body>
 
