@@ -344,14 +344,14 @@
       backDelay: 1000,
     });
 
-  const hum_burger_btn = document.getElementById("hum-burger-btn");
-  const nav = document.getElementsByTagName("nav");
-  console.log(hum_burger_btn);
-  console.log(nav[0]);
-  hum_burger_btn.addEventListener("click",() => {
-    nav[0].classList.toggle('active');
-    hum_burger_btn.classList.toggle('active');
-  });
+    const hum_burger_btn = document.getElementById("hum-burger-btn");
+    const nav = document.getElementsByTagName("nav");
+
+    hum_burger_btn.addEventListener("click", () => {
+      nav[0].classList.toggle('active');
+      hum_burger_btn.classList.toggle('active');
+    });
+
   </script>
 </body>
 
